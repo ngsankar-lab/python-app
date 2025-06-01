@@ -1,0 +1,33 @@
+# Patterns to ignore when building packages.
+# This supports shell glob matching, relative path matching, and
+# negation (prefixed with !). Only one pattern per line.
+node_modules/
+../node_modules/
+../../node_modules/
+*.tgz
+*.log
+.DS_Store
+*.swp
+*.tmp
+*.bak
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+*.pyc
+__pycache__/
+coverage/
+.env
+.env.*
+.idea/
+.vscode/
+.git/
+.gitignore
+chart.lock
+charts/
