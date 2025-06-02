@@ -1,12 +1,12 @@
 FROM python:3.10-alpine
 
-copy ./requirements.txt /tmp
+COPY requirements.txt /tmp
 
-RUN pip3 install -r /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 COPY ./src /src
 
-CMD ["python3", "/src/app.py"]
+CMD python /src/app.py
 
 
 
